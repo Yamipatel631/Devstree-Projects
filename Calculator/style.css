@@ -29,6 +29,7 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
+  
 }
 
 .button {
@@ -39,6 +40,7 @@ body {
   background:  rgb(30, 30, 100);
   color: white;
   transition: background 0.2s;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -50,6 +52,7 @@ body {
   color: rgb(250, 187, 6);
   border: none;
   border-radius: 5px;
+  cursor: pointer;
   /* background-color: transparent #e0e0e0; */
 }
 
@@ -61,7 +64,7 @@ body {
   background: #1dd1a1;
   color: white;
   grid-column: span 2;
-  
+  cursor: pointer;  
 }
 
 .equal:hover {
