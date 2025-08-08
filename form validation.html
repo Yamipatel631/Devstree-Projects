@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>  
+        function validateForm() {
+            var firstName = document.forms['myForm']['firstname'].value;
+            var lastName = document.forms['myForm']['lastname'].value;
+            var Gender = document.forms['myForm']['gender'].value;
+            var Email = document.forms['myForm']['email'].value;
+            var Mobile = document.forms['myForm']['mobile'].value;
+
+            if (firstName == "")
+            {
+                alert("First name must be filled out");
+                return false;
+            }
+            
+            if (lastName == "")
+            {
+                alert("Last name must be filled out");
+                return false;
+            }
+            
+            if (Gender == "")
+            {
+                alert("Gender must be filled out");
+                return false;
+            }
+            
+            if (Email == "")
+            {
+                alert("email must be filled out");
+                return false;
+            }
+            if (Mobile== "")
+            {
+                alert("mobile must be filled out");
+                return false;
+            }
+
+         }
+    </script>
+
+    <style>
+        #a{
+            width: 400px;
+            height: 400px;
+            margin: 40px;
+            color: rgb(218, 170, 14);
+            background-color: rgb(40, 40, 122);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
+        }
+    </style>
+</head>
+    <body>
+        <center>
+        <div id="a">
+          <br>  <h2> Form validation</h2>
+      
+        <form name="myForm" onsubmit="return validateForm()" method="post">
+    
+               firstName: <input type="text" name="firstname"> <br> <br>
+        lastName: <input type="text" name="lastname"> <br> <br>
+         Gender: male <input type="radio" name="gender">  <br> <br>
+                female <input type="radio" name="gender">  <br> <br>
+         Email: <input type="email" name="email">     <br> <br>
+         Mobil: <input type="tel" name="mobile" pattern="[6-9]{1}[0-9]{9}">    <br> <br>   
+                <input type="submit" value="submit">
+           
+        </form>
+        </div>
+    </body>
+</html>
