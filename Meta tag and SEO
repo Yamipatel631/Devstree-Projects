@@ -1,0 +1,18 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Lumintu delivers your favorite meals fast and fresh, straight to your door.">
+  <meta name="keywords" content="food delivery, online ordering, fast food, fresh meals">
+  <meta name="author" content="Fastfood ">
+
+  <!-- Open Graph (for social sharing) -->
+  <meta property="og:title" content="Food Delivery">
+  <meta property="og:description" content="Delicious food from local restaurants delivered to you in minutes. Order now with Fastfood!">
+  <meta property="og:image" content="https://example.com/food-preview.jpg">
+  <meta property="og:url" content="https://example.com">
+
+  <!-- Page Title -->
+  <title>Food Delivery</title>
+</head>
