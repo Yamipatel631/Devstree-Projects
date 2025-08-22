@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <h1 class="title"> Welcome to Fronted Quiz </h1>
+  <div class="cointainer">
+
+    <div class="start-screen">
+      <h1 class="heading">Quiz App</h1>
+      <div class="settings">
+        <label for="num0questions">Number of questions</label>
+        <select id="num0questions">
+          <option value="5">5</option>
+          <option value="10" selected>10</option>
+        </select>
+
+        <label for="time">Select time per question</label>
+        <select id="time">
+          <option value="20">20 Seconds</option>
+          <option value="30">30 Seconds</option>
+        </select>
+      </div>
+      <button class="btn start">Start Quiz</button>
+    </div>
+
+    <div class="Quiz" style="display: none;">
+      <div class="timer">
+        <div class="progress">
+          <div class="progress-bar"></div>
+          <span class="progress-text">10</span>
+        </div>
+      </div>
+      <div class="question-wrapper">
+        <div class="number">
+          Question <span class="current">1</span>
+          <span class="total">/10</span>
+        </div>
+        <div class="question">Question text</div>
+        <div class="answer-wrapper"></div>
+        <button class="btn submit">Submit</button>
+        <button class="btn next" style="display: none;">Next</button>
+      </div>
+    </div>
+
+    <div class="end-screen" style="display: none;">
+      <h1 class="heading">Quiz Completed!</h1>
+      <div class="score-text">Your score</div>
+      <div>
+        <div class="final-score">0</div>
+        <div class="total-score">/10</div>
+      </div>
+      <button class="btn restart">Restart Quiz</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
