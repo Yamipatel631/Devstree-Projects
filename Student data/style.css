@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #089d64;
+    border-bottom: 5px solid black;
+}
+
+img {
+    display: flex;
+    padding-left: 200px;
+}
+
+.controls {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 70px;
+}
+
+.controls input {
+    padding: 20px;
+}
+
+.controls select {
+    padding: 20px;
+}
+
+.controls select {
+    padding: 20px;
+}
+
+button {
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: larger;
+}
+
+button:hover {
+    background-color: rgb(159, 220, 159);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background: #f4f4f4;
+}
+
+
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hidden {
+    display: none;
+}
+
+
+.popup-content {
+    background: #b1c1d2;
+    caret-color: white;
+    padding: 25px 30px;
+    border-radius: 12px;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.popup-content h2 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #333;
+    border-bottom: 3px solid #007bff;
+    padding-bottom: 8px;
+}
+
+
+#studentForm label {
+    display: block;
+    margin: 10px 0 4px;
+    font-weight: 600;
+    color: #444;
+}
+
+#studentForm input,
+#studentForm select,
+#studentForm textarea {
+    width: 100%;
+    padding: 5px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    transition: border 0.2s ease-in-out;
+}
+
+#studentForm input:focus,
+#studentForm select:focus,
+#studentForm textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.form-actions button {
+    flex: 1;
+    margin: 0 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-actions button[type="submit"] {
+    background: #28a745;
+    color: white;
+}
+
+.form-actions button[type="submit"]:hover {
+    background: #218838;
+}
+
+#cancelBtn {
+    background: #dc3545;
+    color: white;
+}
+
+#cancelBtn:hover {
+    background: #c82333;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}

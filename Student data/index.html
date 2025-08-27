@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Student Management App</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <h1>Student Management System</h1>
+
+    <div class="controls">
+        <input type="text" id="search" placeholder="🔎 Search by ID or Name">
+
+        <select id="filterAttendance">
+            <option value="">Filter by Attendance</option>
+            <option value="75">Below 75%</option>
+            <option value="50">Below 50%</option>
+            <option value="33">Below 33%</option>
+        </select>
+
+        <select id="filterGrades">
+            <option value="">Filter by Grades</option>
+            <option value="80">Above 80%</option>
+            <option value="60">Above 60%</option>
+            <option value="50">Above 50%</option>
+            <option value="33">Above 33%</option>
+            <option value="below33">Below 33%</option>
+        </select>
+
+        <button onclick="openForm()">➕ Add Student</button>
+    </div>
+
+    <table id="student-record">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>City</th>
+                <th>Avg. Grade</th>
+                <th>Attendance %</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <!-- Form Modal -->
+    <div id="formPopup" class="popup hidden">
+        <div class="popup-content">
+            <h2 id="formTitle">Add Student</h2>
+            <form id="studentForm">
+                <input type="hidden" id="studentId">
+
+                <label>Name</label>
+                <input type="text" id="name" required>
+
+                <label>Age</label>
+                <input type="number" id="age" min="1" required>
+
+                <label>Gender</label>
+                <select id="gender" required>
+                    <option value="">--Select--</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+
+                <label>Email</label>
+                <input type="email" id="email" required>
+
+                <label>Phone</label>
+                <input type="text" id="phone" maxlength="10" required>
+
+                <label>City</label>
+                <input type="text" id="city" required>
+
+                <label>State</label>
+                <input type="text" id="state" required>
+
+                <label>Grades (comma separated)</label>
+                <input type="text" id="grades" placeholder="e.g. 85,90,78">
+
+                <label>Attendance (present days out of 120)</label>
+                <input type="number" id="attendance" min="0" max="120">
+
+                <div class="form-actions">
+                    <button type="submit">Save</button>
+                    <button type="button" id="cancelBtn">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <div id="viewPopup" class="popup hidden">
+        <div class="popup-content">
+            <button id="closeViewBtn" class="close"> &times;</button>
+            <div id="viewContent"></div>
+        </div>
+    </div>
+
+    <script src="Student_data.js"> </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
