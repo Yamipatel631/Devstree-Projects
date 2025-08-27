@@ -1,6 +1,5 @@
 let students = [];
 
-// Load from localStorage
 function loadStudents() {
   try {
     const saved = localStorage.getItem("students");
@@ -56,7 +55,7 @@ function renderTable() {
     tbody.appendChild(tr);
   });
 
-  applyFilters(); // Apply filters after rendering
+
 }
 
 function openForm(id = null) {
@@ -203,7 +202,6 @@ function clearError(input) {
   }
 }
 
-// ====== Filtering Logic ======
 document.getElementById("search").addEventListener("input", applyFilters);
 document.getElementById("filterAttendance").addEventListener("change", applyFilters);
 document.getElementById("filterGrades").addEventListener("change", applyFilters);
@@ -237,7 +235,6 @@ function applyFilters() {
 
   const tbody = document.querySelector("#student-record tbody");
 
-  // Remove previous "No data" row if exists
   const existing = document.getElementById("no-data-row");
   if (existing) existing.remove();
 
@@ -251,6 +248,6 @@ function applyFilters() {
   }
 }
 
-// ====== Init ======
+
 loadStudents();
 renderTable();
